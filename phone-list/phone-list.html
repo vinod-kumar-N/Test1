@@ -1,0 +1,14 @@
+Search: <input type="text" placeholder="Search models" ng-model="$ctrl.query">
+<p>
+    <select name="" id="" ng-model="$ctrl.orderProp">
+        <option value="name">Alphabetical</option>
+        <option value="age">Newset</option>
+    </select>
+</p>
+<ul>
+    <li ng-repeat="phone in $ctrl.phones | filter: $ctrl.query | orderBy: $ctrl.orderProp">
+        <a href="#/phones/{{phone.id}}">{{phone.id}}</a>
+        <p>{{phone.snippet}}</p>
+        <img src="{{phone.imageUrl}}" alt="">
+    </li>
+</ul>

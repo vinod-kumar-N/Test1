@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="phonecatApp">
+    <head>
+        <meta charset="utf-8">
+        <title>My Phone cat App</title>
+        <script src="lib/angular.min.js"></script>
+        <script src="lib/angular-route.js"></script>
+        <script src="app/app.js"></script>
+        <script src="app/app.config.js"></script>
+                
+        <script src="phone-list/phone-list.module.js"></script>
+        <script src="phone-list/phone-list.component.js"></script>
+        <script src="phoneDetail/phone-detail.module.js"></script>
+        <script src="phoneDetail/phone-detail.component.js"></script>
+    </head>
+    <body>
+        
+        <ul>
+            <li><a href="#phones">Phones</a></li>    
+        </ul>  
+        <div ng-view></div>
+    </body>
+</html>
